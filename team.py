@@ -36,6 +36,7 @@ def main():
     add_players(team, new_players)  # Call the step 5 function
     print_players(team)  # Call the step 6 function to print players
     print_opponents(team)  # Call the step 7 function to print opponents
+    print_player_list(team['players'])  # get the list and print it
 
 # TODO: Step 4 - Function that prints team name and city
 def print_team_name_and_city(team):
@@ -60,11 +61,12 @@ def print_opponents(team):
     opponents = []  # start with an empty list
     for game in team['games']:  # look at games one at a time
         opponents.append(game['opponent'])
-    print(", ".join(opponents))
+    print(", ".join(opponents))  # See the str methods in standard library docs
     return
 
-# TODO: Step 8 - Function that prints comma-separated list of movie titles
-def print_movie_titles(movie_list):
+# TODO: Step 8 - Function that prints comma-separated list of players
+def print_player_list(player_list):
+    print(", ".join(player_list))
     return
 
 if __name__ == '__main__':
