@@ -31,7 +31,10 @@ def main():
             }
     team['games'].append(new_game)
     print_team_name_and_city(team)  # Call the function in Step 4
-
+    
+    new_players = ['Domi','Nylander']  # New players for step 5
+    add_players(team, new_players)  # Call the step 5 function
+    print(team['players'])  # Test that the list has the new players
 
 # TODO: Step 4 - Function that prints team name and city
 def print_team_name_and_city(team):
@@ -40,8 +43,9 @@ def print_team_name_and_city(team):
     print(f'The {city} {lastname} are the greatest!')
     return
 
-# TODO: Step 5 - Function that adds pizza toppings to data structure
-def add_pizza_toppings(about_me, toppings):
+# TODO: Step 5 - Function that adds players to data structure
+def add_players(team, players):
+    team['players'].extend(players)
     return
 
 # TODO: Step 6 - Function that prints bullet list of pizza toppings
