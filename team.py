@@ -22,7 +22,6 @@ def main():
             }
         ]
     }
-    print(team) # Temporary debug print
 
     # TODO: Step 3 - Add another movie to the data structure
     new_game = {
@@ -31,8 +30,7 @@ def main():
                 'goals_against': 1
             }
     team['games'].append(new_game)
-    print(team) # Temporary debug print
-    print_team_name_and_city(team)
+    print_team_name_and_city(team)  # Call the function in Step 4
 
 
 # TODO: Step 4 - Function that prints team name and city
