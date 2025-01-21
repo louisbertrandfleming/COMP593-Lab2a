@@ -60,7 +60,7 @@ def print_opponents(team):
     opponents = []  # start with an empty list
     for game in team['games']:  # look at games one at a time
         opponents.append(game['opponent'])
-    print(opponents)
+    print(", ".join(opponents))
     return
 
 # TODO: Step 8 - Function that prints comma-separated list of movie titles
