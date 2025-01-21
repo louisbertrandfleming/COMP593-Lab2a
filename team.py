@@ -1,3 +1,12 @@
+''' team.py - Demonstrate complex data structures.
+COMP 593 Scripting Applications Winter 2025 Lab 2
+Louis Bertrand <louis.bertrand@flemingcollege.ca>
+DON'T FORGET THE STANDARD ACADEMIC INTEGRITY STATEMENT!
+This program is strictly my own work. Any material
+beyond course learning materials that is taken from 
+the Web or other sources is properly cited, giving
+credit to the original author(s).
+'''
 def main():
 
     # TODO: Step 2 - Create a complex data structure
