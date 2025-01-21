@@ -34,7 +34,8 @@ def main():
     
     new_players = ['Domi','Nylander']  # New players for step 5
     add_players(team, new_players)  # Call the step 5 function
-    print(team['players'])  # Test that the list has the new players
+    print_players(team)  # Call the step 6 function to print players
+
 
 # TODO: Step 4 - Function that prints team name and city
 def print_team_name_and_city(team):
@@ -48,8 +49,10 @@ def add_players(team, players):
     team['players'].extend(players)
     return
 
-# TODO: Step 6 - Function that prints bullet list of pizza toppings
-def print_pizza_toppings(about_me):
+# TODO: Step 6 - Function that prints bullet list of players
+def print_players(team):
+    for player in team['players']:
+        print(f' * {player}')
     return
 
 # TODO: Step 7 - Function that prints comma-separated list of movie genres
